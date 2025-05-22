@@ -1,97 +1,62 @@
 # -----------------------------------------------------------------------------
-# Configuraciones Globales y del Sistema Operativo
+# Sistema Operativo
 # -----------------------------------------------------------------------------
-.DS_Store          # macOS
-Thumbs.db          # Windows
-ehthumbs.db        # Windows
-desktop.ini        # Windows
-.Spotlight-V100    # macOS
-.Trashes           # macOS
-._* # macOS
-
-# -----------------------------------------------------------------------------
-# Next.js (Frontend)
-# -----------------------------------------------------------------------------
-# Directorios de producción/construcción
-.next/
-out/
-build/
-
-# Directorios de módulos
-node_modules/
-.pnp/
-.pnp.js
-
-# Archivos de depuración y logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.parcel-cache/
-.eslintcache
-
-# Archivos de entorno
-.env
-.env.local
-.env.development.local
-.env.production.local
-.env.test.local
-.env.ci.local
-
-# Next.js specific cache
-.next/cache/
-
-# Archivos de cobertura de pruebas
-coverage/
-
-# Archivos de TurboRepo
-.turbo/
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+.Spotlight-V100
+.Trashes
+._*
 
 # -----------------------------------------------------------------------------
-# Flask (Backend)
+# Node.js / Next.js (Frontend)
 # -----------------------------------------------------------------------------
-# Entorno virtual de Python
-.venv/
-venv/
-env/
+/frontend/node_modules/
+/frontend/.next/
+/frontend/out/
+/frontend/.turbo/
+/frontend/.eslintcache
+/frontend/.env
+/frontend/.env.local
+/frontend/.env.*.local
+/frontend/coverage/
+/frontend/.parcel-cache/
+frontend/package-lock.json # (si usas lock en local y prefieres no subirlo)
 
-# Archivos de bytecode de Python
-__pycache__/
-*.py[cod]
-*$py.class
+# -----------------------------------------------------------------------------
+# Python / Flask (Backend)
+# -----------------------------------------------------------------------------
+/backend/__pycache__/
+/backend/*.py[cod]
+/backend/env/
+/backend/venv/
+/backend/.env
+/backend/.mypy_cache/
+/backend/*.log
+/backend/.coverage
+/backend/htmlcov/
+/backend/.pytest_cache/
+/backend/migrations/versions/
+/backend/instance/
+/backend/*.sqlite3
+/backend/*.egg-info/
+/backend/.webassets-cache
 
-# Archivos de depuración y logs
-*.log
-*.sqlite3 # Si usas SQLite para la base de datos de desarrollo
-celerybeat-schedule
-.webassets-cache
-.coverage
-.pytest_cache/
-nosetests.xml
-coverage.xml
-htmlcov/
-
-# Archivos específicos de entornos de desarrollo
+# -----------------------------------------------------------------------------
+# IDEs y Editores Comunes (WebStorm / IntelliJ)
+# -----------------------------------------------------------------------------
 .idea/
-
-# Archivos generados por paquetes (ej. Flask-Migrate)
-migrations/versions/
-
-
-# Archivos de paquetes de Python
-*.egg-info/
-.eggs/
+*.iml
+*.ipr
+*.iws
 
 # -----------------------------------------------------------------------------
-# Configuraciones de IDEs/Editores Comunes
+# Otros archivos temporales y de respaldo
 # -----------------------------------------------------------------------------
-.vscode/           # Visual Studio Code
-*.sublime-project  # Sublime Text
-*.sublime-workspace# Sublime Text
-
-# -----------------------------------------------------------------------------
-# Otros Archivos de Historial o Temporales
-# -----------------------------------------------------------------------------
-.history/
 *.tmp
+*.bak
+*.swp
 *~
 ~*
+.history/
