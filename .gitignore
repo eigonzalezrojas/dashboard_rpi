@@ -1,41 +1,97 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# -----------------------------------------------------------------------------
+# Configuraciones Globales y del Sistema Operativo
+# -----------------------------------------------------------------------------
+.DS_Store          # macOS
+Thumbs.db          # Windows
+ehthumbs.db        # Windows
+desktop.ini        # Windows
+.Spotlight-V100    # macOS
+.Trashes           # macOS
+._* # macOS
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/versions
+# -----------------------------------------------------------------------------
+# Next.js (Frontend)
+# -----------------------------------------------------------------------------
+# Directorios de producción/construcción
+.next/
+out/
+build/
 
-# testing
-/coverage
+# Directorios de módulos
+node_modules/
+.pnp/
+.pnp.js
 
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
-.DS_Store
-*.pem
-
-# debug
+# Archivos de depuración y logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.pnpm-debug.log*
+.parcel-cache/
+.eslintcache
 
-# env files (can opt-in for committing if needed)
-.env*
+# Archivos de entorno
+.env
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+.env.ci.local
 
-# vercel
-.vercel
+# Next.js specific cache
+.next/cache/
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# Archivos de cobertura de pruebas
+coverage/
+
+# Archivos de TurboRepo
+.turbo/
+
+# -----------------------------------------------------------------------------
+# Flask (Backend)
+# -----------------------------------------------------------------------------
+# Entorno virtual de Python
+.venv/
+venv/
+env/
+
+# Archivos de bytecode de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos de depuración y logs
+*.log
+*.sqlite3 # Si usas SQLite para la base de datos de desarrollo
+celerybeat-schedule
+.webassets-cache
+.coverage
+.pytest_cache/
+nosetests.xml
+coverage.xml
+htmlcov/
+
+# Archivos específicos de entornos de desarrollo
+.idea/
+
+# Archivos generados por paquetes (ej. Flask-Migrate)
+migrations/versions/
+
+
+# Archivos de paquetes de Python
+*.egg-info/
+.eggs/
+
+# -----------------------------------------------------------------------------
+# Configuraciones de IDEs/Editores Comunes
+# -----------------------------------------------------------------------------
+.vscode/           # Visual Studio Code
+*.sublime-project  # Sublime Text
+*.sublime-workspace# Sublime Text
+
+# -----------------------------------------------------------------------------
+# Otros Archivos de Historial o Temporales
+# -----------------------------------------------------------------------------
+.history/
+*.tmp
+*~
+~*
