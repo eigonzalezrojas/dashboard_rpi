@@ -5,7 +5,7 @@ export default function DashboardLayout({ children }: { children: ReactNode }) {
     <div className="flex min-h-screen bg-gray-100">
       {/* Sidebar */}
       <aside className="w-64 bg-gray-800 text-white flex flex-col p-4">
-        <h1 className="text-xl font-bold mb-6">🌿 My Dashboard</h1>
+        <h1 className="text-xl font-bold mb-6">🌿Dashboard</h1>
         <nav className="flex flex-col gap-4">
           <a href="#" className="hover:bg-gray-700 px-3 py-2 rounded">Dashboard</a>
           <a href="#" className="hover:bg-gray-700 px-3 py-2 rounded">Sensores</a>
@@ -19,7 +19,6 @@ export default function DashboardLayout({ children }: { children: ReactNode }) {
         {/* Header */}
         <header className="bg-white shadow p-4 flex justify-between items-center">
           <h2 className="text-xl font-semibold text-gray-800">Panel de Control</h2>
-          <div>Usuario ⚙️</div>
         </header>
 
         {/* Content */}
